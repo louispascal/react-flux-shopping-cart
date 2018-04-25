@@ -10,7 +10,7 @@ import {Router, Route, browserHistory, IndexRoute} from 'react-router';
 export default () => {
 	return (
 		<Router history={browserHistory}>
-			<Route path={process.env.PUBLIC_URL + '/'} component={StoreTemplate}>
+			<Route path="/" component={StoreTemplate}>
 				<IndexRoute component={Catalog} />
 				<Route path="cart" component={Cart} />
 				<Route path="item/:item" component={CatalogDetail} />
