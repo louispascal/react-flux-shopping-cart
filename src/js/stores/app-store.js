@@ -35,6 +35,9 @@ const AppStore = Object.assign(EventEmitter.prototype, {
       case AppConstants.ADD_ITEM:
           CartAPI.addItem( action.item );
           break;
+      case AppConstants.ADD_BUNDLE_ITEM:
+          CartAPI.addBundleItem( action.item, action.selected );
+          break;
       case AppConstants.REMOVE_ITEM:
           CartAPI.removeItem( action.item );
           break;

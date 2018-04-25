@@ -2,14 +2,14 @@ export default [
 	{
 		'type':'bundle',
 		'id': 'Meal1',
-		'title': 'Burger Supreme Meal',
+		'title': 'Supreme Meal',
 		'summary': 'A supreme burger with fries and drink',
 		'description': 'Lorem ipsum dolor sit amet.',
 		'cost': 5,
 		'options': [
 			{
 			'id': 'Meal1Main',
-			'label':'Burger',
+			'label':'Select Burger:',
 			'options':[
 				{
 					'id':'Meal1Main1',
@@ -17,18 +17,18 @@ export default [
 				}]
 			}, {
 			'id': 'Meal1Side',
-			'label':'Side',
+			'label':'Select Side:',
 			'options':[
 				{
 					'id':'Meal1Side1',
-					'item':'Fries1'
+					'item':'Side1'
 			 	},{
 			 		'id':'Meal1Side2',
-					'item':'Fries2'
+					'item':'Side2'
 			 	}]
 			 }, {
 			  'id': 'Meal1Drink',
-			  'label':'Drink',
+			  'label':'Select Drink:',
 			  'options':[
 			  	{
 			  		'id':'Meal1Drink1',
@@ -41,14 +41,14 @@ export default [
 	}, {
 		'type':'bundle',
 		'id': 'Meal2',
-		'title': 'Chicken Burger Meal',
+		'title': 'Chicken Meal',
 		'summary': 'A chicke burger with fries and drink',
 		'description': 'Lorem ipsum dolor sit amet.',
 		'cost': 5,
 		'options': [
 			{
 			'id': 'Meal2Main',
-			'label':'Burger',
+			'label':'Select Burger:',
 			'options':[
 				{
 					'id':'Meal2Main1',
@@ -56,18 +56,18 @@ export default [
 				}]
 			}, {
 			'id': 'Meal2Side',
-			'label':'Side',
+			'label':'Select Side:',
 			'options':[
 				{
 					'id':'Meal2Side1',
-					'item':'Fries1'
+					'item':'Side1'
 			 	},{
 			 		'id':'Meal2Side2',
-					'item':'Fries2'
+					'item':'Side2'
 			 	}]
 			 }, {
 			  'id': 'Meal2Drink',
-			  'label':'Drinks',
+			  'label':'Select Drinks:',
 			  'options':[
 			  	{
 			  		'id':'Meal2Drink1',

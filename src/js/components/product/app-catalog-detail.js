@@ -12,6 +12,18 @@ function getCatalogItem( props ) {
 
 
 const CatalogDetail = (props) => {
+
+	const actionButton = (props.item.type === 'product') ? (
+	<CartButton 
+			handler={
+				AppActions.addItem.bind(null, props.item)
+			}
+			text="Add to cart"
+		/>
+	) : (
+		<Link to={`/options/${props.item.id}`} items={props.item} className="waves-effect waves-light btn-small">Choose...</Link>
+	)
+
 	return (
 		<div>
 			<h4>{ props.item.title}</h4>
@@ -20,14 +32,9 @@ const CatalogDetail = (props) => {
 			<p>${ props.item.cost }
 				<span className="text-success">{props.item.qty && `(${props.item.qty} in cart)`}</span>
 			</p> 
-			<div className="btn-group">
-				<Link to ="/" className="btn btn-secondary btn-sm">Continue Shopping</Link>
-				<CartButton 
-					handler={
-						AppActions.addItem.bind(null, props.item)
-					}
-					text="Add to cart"
-				/>
+			<div className="row">
+				<div className="col s2"><Link to ="/" className="waves-effect waves-light btn-small">Continue Shopping</Link></div>
+				<div className="col s2">{actionButton}</div>
 			</div>
 		</div>
 	)

@@ -13,21 +13,23 @@ export default (props) => {
 			text="Add to cart"
 			/>
 		) : (
-			<Link to={`/options/${props.item.id}`} items={props.item} className="btn btn-default btn-sm">Choose...</Link>
+			<Link to={`/options/${props.item.id}`} items={props.item} className="waves-effect waves-light btn-small">Choose...</Link>
 		)
 
 	return (
-		<div className="col-xs-6  col-sm-4  col-md-3">
-			<h4>{ props.item.title}</h4>
+		<div className="col s12 m6 l4">
+			<h5>{ props.item.title}</h5>
 			<img src="http://placehold.it/250x250" width="100%" className="img-responsive" />
-			<p>{ props.item.summary }</p>
-			<p>${ props.item.cost }
-				<span className="text-success">{props.item.qty && `(${props.item.qty} in cart)`}</span>
-			</p> 
+			<div className="row">
+				<div className="col s12">
+					Price: ${ props.item.cost }
+					<span className="text-success">{props.item.qty && `(${props.item.qty} in cart)`}</span>
+				</div>
+			</div> 
 
-			<div className="btn-group">
-				<Link to={`/item/${props.item.id}`} className="btn btn-default btn-sm">Learn More</Link>
-				{actionButton}
+			<div className="row">
+				<div className="col s6"><Link to={`/item/${props.item.id}`} className="waves-effect waves-light btn-small">Learn More</Link></div>
+				<div className="col s6">{actionButton}</div>
 			</div>
 		</div>
 	)

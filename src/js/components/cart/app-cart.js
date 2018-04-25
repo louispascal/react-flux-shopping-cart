@@ -10,7 +10,7 @@ const cartItems = () => {
 
 const Cart = (props) => {
 
-  var total = 0; 
+  var total = 0;
   var items = props.items.map( (item, i) => {
   	let subtotal = item.cost * item.qty;
   	total += subtotal;
@@ -24,8 +24,8 @@ const Cart = (props) => {
   });
   return (
   	<div>
-  		<h1>Cart</h1>
-  		<table className="table table-hover">
+  		<h4>Cart</h4>
+  		<table className="stripped">
   			<thead>
   				<tr>
   					<th></th>
@@ -48,7 +48,6 @@ const Cart = (props) => {
       <Link to="/">Continue Shopping</Link>
   	</div>
   );
-  }
-
+}
 
 export default StoreWatchMixin(Cart, cartItems);

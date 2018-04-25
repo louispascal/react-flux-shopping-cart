@@ -7,6 +7,11 @@ export default {
 			actionType: AppConstants.ADD_ITEM, item
 		});
 	},
+	addBundleItem(item, selected = []) {
+		dispatch({
+			actionType: AppConstants.ADD_BUNDLE_ITEM, item, selected
+		});
+	},
 	removeItem(item) {
 		dispatch({
 			actionType: AppConstants.REMOVE_ITEM, item

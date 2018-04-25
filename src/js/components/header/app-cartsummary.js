@@ -5,7 +5,7 @@ import StoreWatchMixin from '../../mixins/StoreWatchMixin';
 
 const CartSummary = ( props ) => {
 	return (
-		<div style={{paddingTop: 15}}>
+		<div className="right-align" style={{paddingTop: 15}}>
 			<Link to="/cart" className="btn btn-success">
 			 {`Cart Items: ${props.qty} / $${props.total}` }
 			</Link>
