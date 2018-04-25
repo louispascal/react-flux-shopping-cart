@@ -19,7 +19,7 @@ export default (props) => {
 	return (
 		<div className="col s12 m6 l4">
 			<h5>{ props.item.title}</h5>
-			<img src="http://placehold.it/250x250" width="100%" className="img-responsive" />
+			<img src={ props.item.imageUrl} width="100%" className="img-responsive" />
 			<div className="row">
 				<div className="col s12">
 					Price: ${ props.item.cost }

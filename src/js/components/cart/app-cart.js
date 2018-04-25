@@ -45,7 +45,7 @@ const Cart = (props) => {
   				</tr>
   			</tfoot>
   		</table>
-      <Link to="/">Continue Shopping</Link>
+      <p><Link to="/">Continue Shopping</Link></p>
   	</div>
   );
 }

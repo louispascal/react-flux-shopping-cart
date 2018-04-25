@@ -27,7 +27,7 @@ const CatalogDetail = (props) => {
 	return (
 		<div>
 			<h4>{ props.item.title}</h4>
-			<img src="http://placehold.it/250x250" />
+			<img src={ props.item.imageUrl} />
 			<p>{ props.item.description }</p>
 			<p>${ props.item.cost }
 				<span className="text-success">{props.item.qty && `(${props.item.qty} in cart)`}</span>
